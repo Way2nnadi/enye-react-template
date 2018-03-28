@@ -15,6 +15,11 @@ apm install linter-eslint
 * atom will ask you to install other dependencies (i.e `linter`, `linter-ui-default` etc.), just keep clicking `yes`.
 > `eslint` main fucntion is to alert you if your javascript isn't written correctly
 
+Once in the repo, install the npm dependencies:
+```
+npm install
+```
+
 ## Application Commands
 If you look in the `package.json`, there are a 5 commands under `scripts`. You only really need to run `npm run dev`.
 This will do three things, It will:
