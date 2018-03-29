@@ -16,7 +16,8 @@ export default {
     },
     plugins: [
         resolve({
-            browser: true,
+            module: true,
+            jsnext: true,
             main: true,
             customResolveOptions: {
                 moduleDirectory: 'node_modules',
@@ -29,22 +30,20 @@ export default {
             exclude: 'node_modules/**',
         }),
         cjs({
-            exclude: 'node_modules/process-es6/**',
             include: [
-                'node_modules/create-react-class/**',
-                'node_modules/fbjs/**',
-                'node_modules/object-assign/**',
-                'node_modules/react/**',
-                'node_modules/react-dom/**',
-                'node_modules/prop-types/**',
+                'node_modules/**',
             ],
+            namedExports: {
+                'node_modules/react/index.js': ['Component', 'createElement', 'Children'],
+                'node_modules/react-dom/index.js': ['createPortal', 'findDOMNode'],
+            }
         }),
         replace({
+             exclude: 'node_modules/**',
             'process.env.NODE_ENV': JSON.stringify('development'),
         }),
-
-        json(),
         globals(),
+        json(),
         livereload(),
     ],
 };

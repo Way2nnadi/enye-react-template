@@ -7,7 +7,7 @@ const server = express();
 const port = process.env.PORT || 3000;
 
 
-server.use(router);
 server.use(serveStatic('build', { index: false }));
+server.use(router);
 
 server.listen(port, () => console.log(`Listening on port ${port}`));
