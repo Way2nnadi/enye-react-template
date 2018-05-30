@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Example from './components/Example';
+import Interact from './components/Interact';
 
 const root = document.querySelector('main');
 
-ReactDOM.render(<Example/>, root)
+ReactDOM.render(<Interact/>, root)

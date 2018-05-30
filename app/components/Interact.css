@@ -1,0 +1,82 @@
+div {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  font-family: "comic sans mc", sans-serif;
+}
+
+.header {
+  text-align: center;
+  background: url(https://www.dashikidresses.com/wp-content/uploads/2017/06/sexy-split-front-gertie-african-print-vivid-blue-skirt-matching-top-pictures.png);
+  background-color: hsla(240, 80%, 60%, 0.7);
+  height: 650px;
+  }
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 20px;
+}
+
+.header .container {
+  position: relative;
+  top: 150px;
+}
+
+h1 {
+  color: white;
+  line-height: 100px;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+    }
+
+
+.header p {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.proceed {
+  color: white;
+  background: black;
+  padding: 10px 40px;
+  text-decoration: none;
+  transition: background .5s;
+  }
+
+
+.nav {
+  background: pink;
+  height: 80px;
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.nav ul li {
+  color: white;
+  display: inline-block;
+  transition: background .3s;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
+
+}
+.proceed:hover, .nav ul li:hover {
+  cursor: auto;
+  background: hsla(230, 80%, 80%, 0.7);
+
+}
