@@ -10,5 +10,4 @@ npm-debug.log*
 # Optional npm cache directory
 .npm
 
-build/
 dist/
